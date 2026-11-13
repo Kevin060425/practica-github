@@ -3,7 +3,8 @@
     <nav class="navbar"></nav>
     <main>
         <section>La ciberseguridad ha evolucionado a un nivel sin igual, desede las defensas manuelmente que se hacian desde terminal hasta ahora que se hace con la misma IA.</section>
-    <aside>Para mas informacion siga a la siguiente pagina</aside>   
+        <p>La IA es una herramienta poderosa en el campo de la ciberseguridad.</p>
+        <aside>Para mas informacion siga a la siguiente pagina</aside>   
     </main>
     <footer>Todos los derechos reservados
     </footer>
