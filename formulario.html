@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Práctica 02</title>
+    <link rel="icon" href="img_optimizadas/favicon.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" title="Volver a la página principal">
+                <img src="img_optimizadas/icono.png" alt="Icono volver al inicio" width="32" height="32">
+            </a>
+        </nav>
+        <h1>Formulario de Valoración de la Práctica</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Envía tu opinión</h2>
+            <!-- Sustituye TU_ENDPOINT_AQUI por el enlace que te da Formspree -->
+            <form action="https://formspree.io/f/TU_ENDPOINT_AQUI" method="POST">
+                
+                <!-- 1. Email de contacto obligatorio -->
+                <div>
+                    <label for="email">Email de contacto:</label><br>
+                    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                </div>
+                <br>
+
+                <!-- 2. Lista desplegable con los 5 conceptos de conceptos.html -->
+                <div>
+                    <label for="concepto">¿Qué concepto de HTML te ha parecido más interesante?</label><br>
+                    <select id="concepto" name="concepto_favorito" required>
+                        <option value="">-- Selecciona un concepto --</option>
+                        <option value="etiquetas-texto">1. Etiquetas de texto</option>
+                        <option value="listas">2. Listas</option>
+                        <option value="enlaces">3. Enlaces</option>
+                        <option value="imagenes">4. Imágenes</option>
+                        <option value="tablas">5. Tablas</option>
+                    </select>
+                </div>
+                <br>
+
+                <!-- 3. Radio buttons para valorar la práctica -->
+                <fieldset>
+                    <legend>¿Cómo valorarías la dificultad de esta práctica?</legend>
+                    
+                    <input type="radio" id="val1" name="valoracion" value="Difícil" required>
+                    <label for="val1">Difícil</label><br>
+
+                    <input type="radio" id="val2" name="valoracion" value="Difícil no, pero un poco larga sí">
+                    <label for="val2">Difícil no, pero un poco larga sí</label><br>
+
+                    <input type="radio" id="val3" name="valoracion" value="Normal">
+                    <label for="val3">Normal</label><br>
+
+                    <input type="radio" id="val4" name="valoracion" value="Fácil">
+                    <label for="val4">Fácil</label><br>
+
+                    <input type="radio" id="val5" name="valoracion" value="Pan comido">
+                    <label for="val5">Pan comido</label>
+                </fieldset>
+                <br>
+
+                <!-- 4. Botones Enviar y Reset -->
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Práctica 02 - Lenguaje de marcas y sistemas de gestión de Información</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos HTML - Práctica 02</title>
+    <link rel="icon" href="img_optimizadas/favicon.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <!-- Enlace de vuelta a index.html mediante un icono con tamaño coherente -->
+        <nav>
+            <a href="index.html" title="Volver a la página principal">
+                <img src="img_optimizadas/icono.png" alt="Icono volver al inicio" width="32" height="32">
+            </a>
+        </nav>
+        <h1>5 Conceptos Clave de HTML</h1>
+    </header>
+
+    <main>
+        <!-- Concepto 1 -->
+        <section>
+            <h2>1. Etiquetas de texto</h2>
+            <p>Permiten estructurar títulos, párrafos y destacar palabras importantes dentro del contenido escrito de una página web.</p>
+            <pre><code>&lt;p&gt;Este es un texto con &lt;strong&gt;negrita&lt;/strong&gt; y &lt;em&gt;cursiva&lt;/em&gt;.&lt;/p&gt;</code></pre>
+        </section>
+
+        <!-- Concepto 2 -->
+        <section>
+            <h2>2. Listas</h2>
+            <p>Sirven para agrupar elementos relacionados. Pueden ser desordenadas (con viñetas usando <code>&lt;ul&gt;</code>) u ordenadas (numeradas usando <code>&lt;ol&gt;</code>).</p>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Primer elemento&lt;/li&gt;
+    &lt;li&gt;Segundo elemento&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <!-- Concepto 3 -->
+        <section>
+            <h2>3. Enlaces</h2>
+            <p>La etiqueta <code>&lt;a&gt;</code> conecta documentos entre sí mediante el atributo <code>href</code>, permitiendo navegar entre páginas locales o externas.</p>
+            <pre><code>&lt;a href="index.html"&gt;Ir al inicio&lt;/a&gt;</code></pre>
+        </section>
+
+        <!-- Concepto 4 -->
+        <section>
+            <h2>4. Imágenes</h2>
+            <p>Se insertan mediante la etiqueta vacía <code>&lt;img&gt;</code>, indicando la ruta del archivo en <code>src</code> y una descripción accesible en <code>alt</code>.</p>
+            <pre><code>&lt;img src="img_optimizadas/foto.jpg" alt="Descripción de la imagen" title="Texto emergente"&gt;</code></pre>
+        </section>
+
+        <!-- Concepto 5 -->
+        <section>
+            <h2>5. Tablas</h2>
+            <p>Permiten organizar datos en filas y columnas de forma estructurada utilizando <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> y <code>&lt;tfoot&gt;</code>.</p>
+            <pre><code>&lt;table&gt;
+    &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Columna 1&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Dato 1&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>Práctica 02 - Lenguaje de marcas y sistemas de gestión de Información</p>
+    </footer>
+
+</body>
+</html>
